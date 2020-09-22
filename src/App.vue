@@ -1,17 +1,15 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <dateils></dateils>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import dateils from './components/dateils.vue'
 export default {
-  name: 'App',
+  name:'app',
   components: {
-    HelloWorld
+    dateils
   }
 }
 </script>
