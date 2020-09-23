@@ -9,7 +9,7 @@
                 <div>
                     <span style="color: gray; font-size: 14px;">{{it.node.title}}</span>
                     <strong>
-                        <span>{{it.last_reply_by}}</span>
+                        <a :href="'#/yong?id=' + it.member.id">{{it.last_reply_by}}</a>
                     </strong>
                     &nbsp;•&nbsp; 最后回复来自 
                     <a href="#">{{it.replies}}</a>

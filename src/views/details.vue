@@ -6,7 +6,7 @@
       </div>
       <div>
         <small>
-          <a href="#" v-if="topic.node">{{topic.node.name}}</a>
+          <a  v-if= "topic.node">{{topic.node.name}}</a>
           {{topic.replies}} 次点击
         </small>
       </div>
@@ -27,7 +27,7 @@
             <img :src="it.member.avatar_normal" class="avatar" />
         </div>
         <strong class="username">
-            <a href="#" class="dark">{{it.member.username}}</a>
+            <a :href="'#/yong?id=' + it.id" class="dark">{{it.member.username}}</a>
         </strong>&nbsp; &nbsp;
         <div class="reply_content">{{it.content}}</div>
         <hr />
